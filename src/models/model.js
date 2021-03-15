@@ -1,5 +1,4 @@
 const connection = require('./connection');
-const { ObjectId } = require('mongodb');
 
 // Busca todos os resultados do banco.
 // const getAll = async () => {

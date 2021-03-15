@@ -1,12 +1,12 @@
 const {
-  getAll,
+  // getAll,
   getById
 } = require('../models/model')
 
-const AllRooms = async () => {
-  const rooms = await getAll();
-  return rooms;
-};
+// const AllRooms = async () => {
+//   const rooms = await getAll();
+//   return rooms;
+// };
 
 const RoomById = async (id) => {
   const room = await getById(id);
@@ -14,6 +14,6 @@ const RoomById = async (id) => {
 };
 
 module.exports = {
-  AllRooms,
+  // AllRooms,
   RoomById
 };

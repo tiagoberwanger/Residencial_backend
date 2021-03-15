@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const {
-  AllRooms,
+  // AllRooms,
   RoomById
 } = require('../services/service')
 
@@ -9,10 +9,10 @@ const Controller = new Router();
 const STATUS_OK = 200;
 const STATUS_NOT_FOUND = 404;
 
-Controller.get('/', async (_req, res) => {
-  const getAllRooms = await AllRooms();
-  return res.status(STATUS_OK).json(getAllRooms)
-});
+// Controller.get('/', async (_req, res) => {
+//   const getAllRooms = await AllRooms();
+//   return res.status(STATUS_OK).json(getAllRooms)
+// });
 
 Controller.get('/:id', async (req, res) => {
   const room = await RoomById(req.params.id);

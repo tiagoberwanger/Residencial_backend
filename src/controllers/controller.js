@@ -4,8 +4,6 @@ const {
   RoomById
 } = require('../services/service')
 
-const { getById } = require('../models/model')
-
 const Controller = new Router();
 
 const STATUS_OK = 200;

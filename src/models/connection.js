@@ -1,7 +1,7 @@
 const { MongoClient } = require('mongodb');
+require('dotenv').config();
 
 const DB_NAME = 'Residencial';
-// const MONGO_DB_URL = "mongodb+srv://tiagoberwanger:mualbk@cluster0.ci38t.mongodb.net/Residencial?retryWrites=true&w=majority"
 const MONGO_DB_URL = process.env.MONGODB_URI;
 
 const connection = () => MongoClient.connect(MONGO_DB_URL, {

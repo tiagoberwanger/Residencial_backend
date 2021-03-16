@@ -1,10 +1,9 @@
 const connection = require('./connection');
 
-// Busca todos os resultados do banco.
-// const getAll = async () => {
-//   return connection()
-//     .then((db) => db.collection('rooms').find().toArray())
-// }
+const getAll = async () => {
+  return connection()
+    .then((db) => db.collection('rooms').find().toArray())
+}
 
 const getById = async (id) => {
   const room = await connection()
@@ -14,6 +13,6 @@ const getById = async (id) => {
 };
 
 module.exports = {
-  // getAll,
+  getAll,
   getById
 }
